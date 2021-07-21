@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-especial: rgb(156, 103, 68);
+  --color-numero: rgba(175, 121, 71, 0.514);
+  --color-igual: orange;
+  --calculadora-fondo: rgba(178, 185, 194, 0.918);
+  --body-bg-color: rgba(65, 54, 54, 0.164);
+  --tamanio-texto: 25px;
+  --google-font--Nova-Square: 'Nova Square', cursive;
+}
+
+body {
+  margin-left: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://i.ytimg.com/vi/8Fxl2p3AWj0/maxresdefault.jpg);
+  width: 95vw;
+  height: 95vh;
+}
+
+.contenedor {
+  padding: 1em;
+  width: 500px;
+}
+
+.lista__funciones {
+  font-size: 25px;
+  color: var(--color-especial);
+}
+
+.otras__funciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.calculadora {
+  margin: 10px;
+  padding: 1em 1em;
+  border-radius: 15px;
+  background-color: var(--calculadora-fondo);
+  box-shadow: inset 0 -6em 5em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.8em 0.8em 1em rgba(17, 9, 1, 0.425);
+}
+
+.lista__accesos,
+.brand {
+  margin: 0.5em;
+  cursor: pointer;
+  list-style: none;
+  padding: 0.3em 0.3em;
+}
+.lista__accesos {
+  border-style: inset;
+  border-radius: 50%;
+}
+
+.encendido {
+  display: none;
+}
+
+.display {
+  font-family:var(--google-font--Nova-Square);
+  letter-spacing: 4px;
+  caret-color: transparent;
+  padding: 0.1em 0em;
+  width: 99%;
+  background: rgba(27, 63, 36, 0.315);
+  text-align: right;
+  line-height: 3rem;
+  font-size: var(--tamanio-texto);
+}
+
+input::placeholder {
+  color:var(--color-numero);
+  opacity: 1;
+}
+
+.teclado {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 0.5%;
+}
+
+.tecla__especial,
+.tecla__numero,
+.tecla__0,
+.tecla__igual {
+  user-select: none;
+  margin: 2% 0.5%;
+  border-style: outset;
+  width: 23%;
+  padding: 0.3em;
+  border-radius: 5%;
+  font-size: var(--tamanio-texto);
+  cursor: pointer;
+}
+
+.tecla__especial {
+  font-weight: 900;
+  font-kerning: auto;
+  background-color: var(--color-especial);
+}
+
+.tecla__numero,
+.tecla__0 {
+  background-color: var(--color-numero);
+}
+.tecla__igual {
+  font-weight: 900;
+  background-color: var(--color-igual);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  body{
+    overflow: hidden;
+  }
+  .contenedor {
+    width: 345px;
+  }
+}

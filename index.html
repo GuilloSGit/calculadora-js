@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicono  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <div class="calculadora">
+                <div class="funciones">
+                    <nav class="lista__funciones">
+                        <ul class="otras__funciones">
+                            <li class="lista__accesos" id="calculadora">
+                                <i class="fas fa-calculator"></i>
+                            </li>
+                            <li class="brand" id="calculadora">GuilloTech</i></li>
+                            <!-- <li class="lista__accesos" id="conversor"><i class="fas fa-exchange-alt"></i></li>
+                            <li class="lista__accesos" id="cambio__dinero"><i class="fas fa-coins"></i></li> -->
+                        </ul>
+                    </nav>
+                </div>
+                <div class="display" id="display">
+                    <input type="text" autofocus class="display" id="resultado" placeholder="0">
+                </div>
+                <div class="teclado">
+                    <p class="tecla__especial" name='data-borrarTodo'><i class="fas fa-trash"></i></p>
+                    <p class="tecla__especial" name='data-borrar'><i class="far fa-arrow-alt-circle-left"></i></p>
+                    <p class="tecla__especial" name='data-operador'>%</p>
+                    <p class="tecla__especial" name='data-operador'>/</p>
+                    <p class="tecla__numero" name="data-number">7</p>
+                    <p class="tecla__numero" name="data-number">8</p>
+                    <p class="tecla__numero" name="data-number">9</p>
+                    <p class="tecla__especial" name='data-operador'>x</p>
+                    <p class="tecla__numero" name="data-number">4</p>
+                    <p class="tecla__numero" name="data-number">5</p>
+                    <p class="tecla__numero" name="data-number">6</p>
+                    <p class="tecla__especial" name='data-operador'>-</p>
+                    <p class="tecla__numero" name="data-number">1</p>
+                    <p class="tecla__numero" name="data-number">2</p>
+                    <p class="tecla__numero" name="data-number">3</p>
+                    <p class="tecla__especial" name='data-operador'>+</p>
+                    <p class="tecla__0" name="data-number">0</p>
+                    <p class="tecla__especial" name="data-number">.</p>
+                    <p class="tecla__igual" name="data-igual">=</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
