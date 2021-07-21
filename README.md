@@ -5,7 +5,7 @@ _________
 
 Intenté usar las herramientas que fui aprendiendo últimamante, y preparándome para lo que será el cursado de soyHenry, que comenzaré en Agosto, 2021.
 
-Lo que más me costó fue darle funcionnalidad a cada tecla y darle retorno por el display en la calculadora.
+Lo que más me costó fue darle funcionalidad a cada tecla y darle retorno por el display en la calculadora.
 
 ---
 
