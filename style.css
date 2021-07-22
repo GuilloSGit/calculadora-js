@@ -135,7 +135,7 @@ input::placeholder {
   }
 
   .otras__funciones {
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 25px;
