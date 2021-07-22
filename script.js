@@ -24,6 +24,7 @@ botonOperaciones.forEach(function (boton) {
 botonIgual.addEventListener('click', function () {
     calcular();
     actualizarDisplay();
+    clear();
 });
 
 botonBorrar.addEventListener('click', function () {
